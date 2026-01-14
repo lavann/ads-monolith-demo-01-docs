@@ -432,6 +432,12 @@ app.MapHealthChecks("/health");
 - **Severity:** High (API design flaw)
 - **Fix Required:** Accept `CheckoutRequest` with token in body
 
+### 11. Filename with Trailing Space
+- **Location:** `Services/CheckoutService .cs` (note: space before .cs)
+- **Impact:** Unusual filename may cause issues with some tools
+- **Severity:** Low (code quality)
+- **Fix Required:** Rename file to `CheckoutService.cs` (no space)
+
 ---
 
 ## Performance Considerations
